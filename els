@@ -1,42 +1,41 @@
-!/bin/bash
+#!/bin/bash
 
-#Author: Joao Cuomo Scanzi
-#Assignment: 6
-#Class: CS260
+#Author: JoeyNT
 #Date: 04/19/19
 
 #This shell script is an implementation ls -l in by heritage
 
 EXT=$(less ls_info |
-  while IFS=" " read -r -a line; do
-    nb=${#line[@]}
-    echo ${line[$((nb - 1))]}
-  done)
+ while IFS=" " read -r -a line; do
+	nb=${#line[@]}
+ echo ${line[$((nb - 1))]}
+done)
 
 if [[ $0 == "els" ]]&[[ $1 == "-l" ]]; then
-        ls -l > ls_info
-        for line in $EXT; do
-                if [[ $line == *.java ]]; then
-                        sed 's/^\s*./J/g' $line
-                elif [[ $line == *.kt]]; then
-                        sed 's/^\s*./K/g' $line
-                elif [[ $line == *.class ]]; then
-                        sed 's/^\s*./C/g' $line  
-                elif [[ $line == *.py ]]; then
-                        sed 's/^\s*./P/g' $line  
-                if [[ $line == *.xml ]]; then
-                        sed 's/^\s*./X/g' $line  
-                fiif [[ $line == *.html ]]; then
-                        sed 's/^\s*./H/g' $line  
-                if [[ $line == *.swift ]]; then
-                        sed 's/^\s*./F/g' $line  
-                if [[ $line == *.sh ]]; then
-                        sed 's/^\s*./B/g' $line        
-                fi
-        done
+	ls -l > ls_info
+	for line in $EXT; do
+		if [[ $line == *.java ]]; then
+			sed 's/^\s*./J/g' $line
+		elif [[ $line == *.kt]]; then
+			sed 's/^\s*./K/g' $line
+		elif [[ $line == *.class ]]; then
+			sed 's/^\s*./C/g' $line  
+		elif [[ $line == *.py ]]; then
+			sed 's/^\s*./P/g' $line  
+		if [[ $line == *.xml ]]; then
+			sed 's/^\s*./X/g' $line  
+		fi
+		if [[ $line == *.html ]]; then
+			sed 's/^\s*./H/g' $line
+		if [[ $line == *.swift ]]; then
+			sed 's/^\s*./F/g' $line  
+		if [[ $line == *.sh ]]; then
+			sed 's/^\s*./B/g' $line
+		fi
+	done
 rm ls_info
 else
-        ls $1
+	ls $1
 fi
 
 exit

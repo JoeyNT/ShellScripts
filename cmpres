@@ -1,8 +1,6 @@
 #!/bin/bash
 
-#Author: Joao Cuomo Scanzi
-#Assignment: 5
-#Class: CS260
+#Author: JoeyNT
 #Date: 04/19/19
 #This shell script compares different compression method outputting the 
 best one
