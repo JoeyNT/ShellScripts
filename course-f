@@ -3,6 +3,7 @@
 #Author: JoeyNT
 #Date: 02/19/2019
 #Shell script that using couse number can retrive information such as professor name, number of people enrolled and their names. 
+
 echo ""
 date
 echo ""
