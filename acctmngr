@@ -1,8 +1,6 @@
 #!bin/bash/
 
-#Assignment: 2 and 3
-#Author: Joao Cuomo Scanzi
-#Class: cs260a
+#Author: JoeyNT
 #Shell script to facilitate, create, delete and adding accounts.
 
 help()
