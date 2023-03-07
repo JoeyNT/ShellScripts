@@ -24,7 +24,6 @@ if [[ $0 == "els" ]]&[[ $1 == "-l" ]]; then
 			sed 's/^\s*./P/g' $line  
 		if [[ $line == *.xml ]]; then
 			sed 's/^\s*./X/g' $line  
-		fi
 		if [[ $line == *.html ]]; then
 			sed 's/^\s*./H/g' $line
 		if [[ $line == *.swift ]]; then
