@@ -2,8 +2,7 @@
 
 
 #Author: JoeyNT
-#Shell script that retrive class information such as name of instructure, 
-and particiants number.
+#Shell script that retrieves class information such as name of instructor, and participants number.
 
 
 DIGIT="^[0-9]+$"
