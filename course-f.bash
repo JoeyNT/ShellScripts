@@ -2,7 +2,7 @@
 
 #Author: JoeyNT
 #Date: 02/19/2019
-#Shell script that using couse number can retrive information such as professor name, number of people enrolled and their names. 
+#Shell script that uses course numbers can retrieve information such as professor name, number of people enrolled, and their names. 
 
 echo ""
 date
@@ -112,5 +112,4 @@ else
 fi
     ;;
 esac
-(END)
 
