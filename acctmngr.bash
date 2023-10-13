@@ -1,7 +1,7 @@
 #!bin/bash/
 
 #Author: JoeyNT
-#Shell script to facilitate, create, delete and adding accounts.
+#Shell script to facilitate, create, delete, and add accounts.
 
 help()
 {
