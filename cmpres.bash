@@ -2,8 +2,7 @@
 
 #Author: JoeyNT
 #Date: 04/19/19
-#This shell script compares different compression method outputting the 
-best one
+#This shell script compares different compression methods outputting the best one
 
 cp $1 "$1.orig" 
 zip -r "$1" $1 &> /dev/null
